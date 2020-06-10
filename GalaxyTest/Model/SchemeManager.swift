@@ -9,13 +9,13 @@
 import Foundation
 
 class SchemeManager {
-    var scheme: Scheme
+    var defaultScheme: Scheme
     var source: SchemeSource
     var cache: SchemeCacheGateway
     
     // default
-    init(scheme: Scheme, source: SchemeSource, cache: SchemeCacheGateway) {
-        self.scheme = scheme
+    init(defaultScheme: Scheme, source: SchemeSource, cache: SchemeCacheGateway) {
+        self.defaultScheme = defaultScheme
         self.source = source
         self.cache = cache
     }
@@ -24,12 +24,11 @@ class SchemeManager {
 // MARK: SchemeRepository
 extension SchemeManager: SchemeRepository {
     func getScheme() -> Scheme {
-        scheme
+        source.getSchemeOutside() ?? defaultScheme
     }
     
     func getCachedScheme() -> Scheme {
-        // might be nil
-        cache.getScheme()!
+        cache.getScheme() ?? defaultScheme
     }
     
     func setCachedSchemeOutdated() {
@@ -37,8 +36,7 @@ extension SchemeManager: SchemeRepository {
     }
     
     func getNetworkScheme() -> Scheme {
-        // might be nil
-        source.getSchemeOutside()!
+        source.getSchemeOutside() ?? defaultScheme
     }
     
     

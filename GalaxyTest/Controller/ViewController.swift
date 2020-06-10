@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let defaultScheme = Scheme(version: 1, chatHosts: [], httpHosts: [:], providers: [], isOutdated: false)
+        schemeManager = SchemeManager(defaultScheme: defaultScheme, source: schemeService, cache: schemeCache)
     }
 
 
