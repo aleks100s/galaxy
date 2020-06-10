@@ -15,6 +15,16 @@
 		53E95D842490D00400290B10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53E95D822490D00400290B10 /* LaunchScreen.storyboard */; };
 		53E95D8F2490D00400290B10 /* GalaxyTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E95D8E2490D00400290B10 /* GalaxyTestTests.swift */; };
 		53E95D9A2490D00400290B10 /* GalaxyTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E95D992490D00400290B10 /* GalaxyTestUITests.swift */; };
+		53E95DAC2490D20700290B10 /* Port.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E95DAB2490D20700290B10 /* Port.swift */; };
+		53E95DAE2490D24F00290B10 /* Alias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E95DAD2490D24F00290B10 /* Alias.swift */; };
+		53E95DB02490D29C00290B10 /* ChatHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E95DAF2490D29C00290B10 /* ChatHost.swift */; };
+		53E95DB22490D2D500290B10 /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E95DB12490D2D500290B10 /* Scheme.swift */; };
+		53E95DB52490D38E00290B10 /* SchemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E95DB42490D38E00290B10 /* SchemeManager.swift */; };
+		53E95DB82490D3D400290B10 /* SchemeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E95DB72490D3D400290B10 /* SchemeRepository.swift */; };
+		53E95DBA2490D48B00290B10 /* SchemeSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E95DB92490D48B00290B10 /* SchemeSource.swift */; };
+		53E95DBC2490D4EE00290B10 /* SchemeCacheGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E95DBB2490D4EE00290B10 /* SchemeCacheGateway.swift */; };
+		53E95DBE2490D65D00290B10 /* SchemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E95DBD2490D65D00290B10 /* SchemeService.swift */; };
+		53E95DC02490D6BB00290B10 /* SchemeCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E95DBF2490D6BB00290B10 /* SchemeCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		53E95D952490D00400290B10 /* GalaxyTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GalaxyTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E95D992490D00400290B10 /* GalaxyTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyTestUITests.swift; sourceTree = "<group>"; };
 		53E95D9B2490D00400290B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53E95DAB2490D20700290B10 /* Port.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Port.swift; sourceTree = "<group>"; };
+		53E95DAD2490D24F00290B10 /* Alias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alias.swift; sourceTree = "<group>"; };
+		53E95DAF2490D29C00290B10 /* ChatHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHost.swift; sourceTree = "<group>"; };
+		53E95DB12490D2D500290B10 /* Scheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheme.swift; sourceTree = "<group>"; };
+		53E95DB42490D38E00290B10 /* SchemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeManager.swift; sourceTree = "<group>"; };
+		53E95DB72490D3D400290B10 /* SchemeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeRepository.swift; sourceTree = "<group>"; };
+		53E95DB92490D48B00290B10 /* SchemeSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeSource.swift; sourceTree = "<group>"; };
+		53E95DBB2490D4EE00290B10 /* SchemeCacheGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeCacheGateway.swift; sourceTree = "<group>"; };
+		53E95DBD2490D65D00290B10 /* SchemeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeService.swift; sourceTree = "<group>"; };
+		53E95DBF2490D6BB00290B10 /* SchemeCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +119,12 @@
 		53E95D762490D00100290B10 /* GalaxyTest */ = {
 			isa = PBXGroup;
 			children = (
+				53E95DAA2490D15100290B10 /* Model */,
+				53E95DA92490D14200290B10 /* Controller */,
+				53E95DA72490D00D00290B10 /* View */,
 				53E95D772490D00100290B10 /* AppDelegate.swift */,
 				53E95D792490D00100290B10 /* SceneDelegate.swift */,
-				53E95D7B2490D00100290B10 /* ViewController.swift */,
-				53E95D7D2490D00100290B10 /* Main.storyboard */,
 				53E95D802490D00400290B10 /* Assets.xcassets */,
-				53E95D822490D00400290B10 /* LaunchScreen.storyboard */,
 				53E95D852490D00400290B10 /* Info.plist */,
 			);
 			path = GalaxyTest;
@@ -126,6 +146,56 @@
 				53E95D9B2490D00400290B10 /* Info.plist */,
 			);
 			path = GalaxyTestUITests;
+			sourceTree = "<group>";
+		};
+		53E95DA72490D00D00290B10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53E95D7D2490D00100290B10 /* Main.storyboard */,
+				53E95D822490D00400290B10 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53E95DA92490D14200290B10 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53E95D7B2490D00100290B10 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		53E95DAA2490D15100290B10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53E95DB62490D3C000290B10 /* interfaces */,
+				53E95DB32490D35F00290B10 /* Domain */,
+				53E95DB42490D38E00290B10 /* SchemeManager.swift */,
+				53E95DBD2490D65D00290B10 /* SchemeService.swift */,
+				53E95DBF2490D6BB00290B10 /* SchemeCache.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53E95DB32490D35F00290B10 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				53E95DAB2490D20700290B10 /* Port.swift */,
+				53E95DAD2490D24F00290B10 /* Alias.swift */,
+				53E95DAF2490D29C00290B10 /* ChatHost.swift */,
+				53E95DB12490D2D500290B10 /* Scheme.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		53E95DB62490D3C000290B10 /* interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				53E95DB72490D3D400290B10 /* SchemeRepository.swift */,
+				53E95DB92490D48B00290B10 /* SchemeSource.swift */,
+				53E95DBB2490D4EE00290B10 /* SchemeCacheGateway.swift */,
+			);
+			path = interfaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +330,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				53E95D7C2490D00100290B10 /* ViewController.swift in Sources */,
+				53E95DB02490D29C00290B10 /* ChatHost.swift in Sources */,
 				53E95D782490D00100290B10 /* AppDelegate.swift in Sources */,
+				53E95DB82490D3D400290B10 /* SchemeRepository.swift in Sources */,
+				53E95DBE2490D65D00290B10 /* SchemeService.swift in Sources */,
+				53E95DAC2490D20700290B10 /* Port.swift in Sources */,
+				53E95DB22490D2D500290B10 /* Scheme.swift in Sources */,
 				53E95D7A2490D00100290B10 /* SceneDelegate.swift in Sources */,
+				53E95DBA2490D48B00290B10 /* SchemeSource.swift in Sources */,
+				53E95DBC2490D4EE00290B10 /* SchemeCacheGateway.swift in Sources */,
+				53E95DB52490D38E00290B10 /* SchemeManager.swift in Sources */,
+				53E95DAE2490D24F00290B10 /* Alias.swift in Sources */,
+				53E95DC02490D6BB00290B10 /* SchemeCache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var schemeManager: SchemeManager?
+    var schemeService = SchemeService()
+    var schemeCache = SchemeCache()
 
     override func viewDidLoad() {
         super.viewDidLoad()
